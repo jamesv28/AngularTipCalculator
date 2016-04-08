@@ -38,7 +38,7 @@ app.controller('earningsController', ['$scope', 'mealDataService', function($sco
 
 }]); //end of earningController
 
-app.controller('chargesController', 'mealDataService', ['$scope', function($scope, mealDataService) {
+app.controller('chargesController', ['$scope','mealDataService', function($scope, mealDataService) {
 
     $scope.theMeals = mealDataService.getMeals();
 

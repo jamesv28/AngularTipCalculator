@@ -1,0 +1,9 @@
+/* add custom styles */
+#myFooter {
+    background: #000;
+    color: #ffffff;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}

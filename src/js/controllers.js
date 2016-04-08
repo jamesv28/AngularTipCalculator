@@ -7,22 +7,12 @@ app.controller('detailsController', ['$scope' ,'mealDataService', function($scop
     $scope.form = {};
     $scope.pushMeal = function () {
         mealDataService.addMeal($scope.form);
-        console.log('form', $scope.form);
+        console.log('isnerting into form', $scope.form);
         $scope.form = {};
     };
 
 }]); //end of details controller
 
-app.controller('chargesController', 'mealDataService', ['$scope', function($scope, mealDataService) {
-
-    $scope.theMeals = mealDataService.getMeals();
-
-    
-    $scope.showIndividual = function() {
-
-    }
-
-}]);
 
 app.controller('earningsController', ['$scope', 'mealDataService', function($scope, mealDataService) {
 
@@ -47,3 +37,15 @@ app.controller('earningsController', ['$scope', 'mealDataService', function($sco
     });
 
 }]); //end of earningController
+
+app.controller('chargesController', 'mealDataService', ['$scope', function($scope, mealDataService) {
+
+    $scope.theMeals = mealDataService.getMeals();
+
+    console.log('this is the meals', $scope.theMeals);
+
+    //$scope.showIndividual = function() {
+    //    $scope.firstOne = $scope.theMeals[0];
+    //}
+
+}]);

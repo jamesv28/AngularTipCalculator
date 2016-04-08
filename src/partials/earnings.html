@@ -2,9 +2,9 @@
     <div class="container">
         <h3 class="text-center">Overall Charges</h3>
         <div class="col-md-6 col-md-offset-3">
-            <p>Total Tips: {{ theTips }}</p>
+            <p>Total Tips: {{ theTips | currency}}</p>
             <p>Meal Count:  {{ theMeals.length  }} </p>
-            <p>Total Taxes:{{ theTaxes }} </p>
+            <p>Total Taxes:{{ theTaxes | currency }} </p>
         </div>
     </div>
 </div>J

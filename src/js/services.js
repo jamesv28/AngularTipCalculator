@@ -8,7 +8,10 @@ app.service('mealDataService', function ($http) {
         getMeals: function () {
             return meals;
         },
-        getCuulaltiveTotals: function () {
+        getCumulativeTotal: function () {
+
+            //after i get all of the data i need to run this for the math
+            //of actually finding the actual tip,tax amounts
         },
         addMeal: function (newMeal) {
             meals.push(newMeal);

@@ -1,15 +1,15 @@
 <div class="row" ng-controller="chargesController" >
-    <div class="container">
+    <div class="container" ng-init="showIndividual()">
         <div class="col-md-8 col-md-offset-2">
             <h2 class="text-center">Overview</h2>
             <div class="form-group">
                 <button class="btn btn-success">Previous Meal</button>
                 <button class="btn btn-primary">Next Meal</button>
             </div>
-            <h4>Meal:    </h4>
-            <p>Tip Amount: </p>
-            <p>Tax: </p>
-            <p>Total</p>
+            <h4>Meal:     </h4>
+            <p>Tip Amount: {{tip}} </p>
+            <p>Tax:  {{  tax }}</p>
+            <p>Total: {{ total }}  </p>
         </div>
     </div>
 </div>

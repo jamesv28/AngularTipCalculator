@@ -45,13 +45,11 @@ app.controller('chargesController', ['$scope','mealDataService', function($scope
     $scope.tip = 0;
     $scope.price = 0;
 
-    console.log('this is the meals', $scope.theMeals);
-
     $scope.showIndividual = function() {
         $scope.firstOne = $scope.theMeals[0];
         $scope.tip = $scope.firstOne.tip;
         $scope.tax = $scope.firstOne.tax;
-        $scope.price = $scope.firstOne.total
+        $scope.price = $scope.firstOne.price;
     }
 
 }]);
